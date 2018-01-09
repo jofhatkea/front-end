@@ -51,7 +51,29 @@ Requires a bit more work, but it's oh so nice :-)
 Once a conflict is encountered, open the file in VS Code (or WebStorm) and use the GUI to select the changes you like
 
 ## NPM
+###requirements
 
+
+NPM vs yarn vs ...
+`npm install`
+`npm install -g live-server`
+svgo
+pageres-cli
+https://github.com/sindresorhus/pageres-cli
+
+### setup NPM for the current project
+`npm init`
+This will give us a file called package.json. We can add scripts/commands to it, to automate our workflow.
+
+show cat css/*.css > bundle.css
+convert to npm script
+npm run myfirstscript
+
+"bundlecss": "cat a.css b.css > bundle.css"
+`cat styles/*.css > out/bundle.css`
+
+npm run ....
+npm start, test, pre?
 
 ## transpiling
 ### pure babel
