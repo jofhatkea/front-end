@@ -22,18 +22,32 @@ merge branch | `git merge branchname` | standing on the branch you wish to merge
 **cloning / initializing** | |
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
 setup a new repo locally | `git init`| 
+**other** | |
+list commits | `git log`| This one has **a lot of options**
 
 ### git workflow
 There's no fixed way to do it, but here's a rule-of-thumb-aproach
 1. `git branch todays-tasks`
 2. `git checkout todays-tasks`
 3. do some coding
-4. `git add newfile.ext``
-5. `git commit -m "some message"
+4. `git add newfile.ext`
+5. `git commit -m "some message"`
 6. goto 4
 7. Something is working: `git push --set-upstream origin todays-tasks`
 8. `git push` and goto 4
 9. Everything is awesome: `git checkout master && git merge todays-tasks`
+
+### merge conflicts
+They are bound to happen, and one of the main reasons we use git
+First up, two ways to merge
+1. From github.com
+With two branches pushed to github, go to "Pull requests", select "master" as base, and choose the branch you want to merge into master
+
+Then follow the GUI / instructions
+
+2. Manually / terminal /editor
+Requires a bit more work, but it's oh so nice :-)
+
 
 ## NPM
 
