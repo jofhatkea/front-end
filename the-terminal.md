@@ -11,8 +11,10 @@ part 1, 2 & 3
 add a file (stage) | `git add filename.ext` | 
 add all changed files | `git add --all`| beware!
 commit staged files | `git commit -m "my commit message"`| 
-add and commit, one-liner | `git commit -am "my message" | does NOT add new files
+add and commit, one-liner | `git commit -am "my message"` | does NOT add new/untracked files
 push commited to remote | `git push` |
+branches | |
+---|---|---
 list branches | `git branch -a` | 
 checkout a branch | `git branch branchname`| ex: `git branch login``
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
