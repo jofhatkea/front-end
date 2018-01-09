@@ -8,14 +8,9 @@ part 1, 2 & 3
 ## git in the terminal
 | action | command | notes |
 ---|---|---
-add a file | `git add filename.ext | none
-
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+add a file (stage) | `git add filename.ext` | none
+add all changed files | `git add --all`| beware!
+commit staged files | `git commit -m "my commit message"`| 
 
 ## transpiling
 ### pure babel
