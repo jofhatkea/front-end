@@ -35,6 +35,8 @@ There's no fixed way to do it, but here's a rule-of-thumb-aproach
 8. `git push` and goto 4
 9. Everything is awesome: `git checkout master && git merge todays-tasks`
 
+Will this screw thing up?
+
 ## NPM
 
 
