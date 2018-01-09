@@ -13,13 +13,14 @@ add all changed files | `git add --all`| beware!
 commit staged files | `git commit -m "my commit message"`| 
 add and commit, one-liner | `git commit -am "my message"` | does NOT add new/untracked files
 push commited to remote | `git push` |
-branches | |
----|---|---
+status | `git status` | overview of staged files etc, *really* usefull
+*branches* | |
 list branches | `git branch -a` | 
 checkout a branch | `git branch branchname`| ex: `git branch login``
+*cloning / initializing* | |
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
 setup a new repo locally | `git init`| 
-status | `git status` | overview of staged files etc, *really* usefull
+
 
 ## transpiling
 ### pure babel
