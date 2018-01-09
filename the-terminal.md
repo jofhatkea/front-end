@@ -1,5 +1,7 @@
 # The Terminal, NPM & git in the terminal
 
+## Requirements
+https://www.codecademy.com/learn/learn-the-command-line[https://www.codecademy.com/learn/learn-the-command-line] part 1, 2 & 3
 
 ## transpiling
 ### pure babel
