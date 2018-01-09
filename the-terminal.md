@@ -48,6 +48,7 @@ Then follow the GUI / instructions
 2. Manually / terminal /editor
 Requires a bit more work, but it's oh so nice :-)
 
+Once a conflict is encountered, open the file in VS Code (or WebStorm) and use the GUI to select the changes you like
 
 ## NPM
 
