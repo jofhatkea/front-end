@@ -16,7 +16,7 @@ list branches | `git branch -a` |
 checkout a branch | `git branch branchname`| ex: `git branch login``
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
 setup a new repo locally | `git init`| 
-
+status | `git status` | overview of staged files etc, *really* usefull
 
 ## transpiling
 ### pure babel
