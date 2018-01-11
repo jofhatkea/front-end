@@ -57,7 +57,6 @@ Two new kids on the block are Yarn & Turbo, they do exactly the same, but a re a
 ### Requirements
 Install [Node](https://nodejs.org/en/) which will also install NPM (you should probably choose the LTS version)
 
-NPM vs yarn vs ...
 
 `npm install`
 `npm install -g live-server`
