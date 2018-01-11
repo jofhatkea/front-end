@@ -51,8 +51,11 @@ Requires a bit more work, but it's oh so nice :-)
 Once a conflict is encountered, open the file in VS Code (or WebStorm) and use the GUI to select the changes you like
 
 ## NPM
-### Requirements
+NPM is our package manager, it handles downloading / using JS libraries for us.
 
+Two new kids on the block are Yarn & Turbo, they do exactly the same, but a re a bit more shiny. NPM is still the standard, we'll use that
+### Requirements
+Install [Node](https://nodejs.org/en/) which will also install NPM
 
 NPM vs yarn vs ...
 
