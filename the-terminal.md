@@ -51,16 +51,22 @@ Requires a bit more work, but it's oh so nice :-)
 Once a conflict is encountered, open the file in VS Code (or WebStorm) and use the GUI to select the changes you like
 
 ## NPM
-###requirements
+### Requirements
 
 
 NPM vs yarn vs ...
+
 `npm install`
 `npm install -g live-server`
 svgo
 pageres-cli
 https://github.com/sindresorhus/pageres-cli
-
+https://github.com/purifycss/purifycss
+purifycss src/css/main.css src/css/bootstrap.css src/js/main.js --min --info --out src/dist/index.css
+(læser filer ind fra venstre til højre)
+"purify": "purifycss index.html  a.css b.css bootstrap.min.css --info --out dist.css" virker
+"purify": "purifycss index.html  bootstrap.min.css a.css b.css  --info --out dist.css" ocverser enkelte styles i a.css
+purify skal nok kun bruges på framework css? evt på en fil af gangen?
 ### setup NPM for the current project
 `npm init`
 This will give us a file called package.json. We can add scripts/commands to it, to automate our workflow.
@@ -74,7 +80,7 @@ npm run myfirstscript
 
 npm run ....
 npm start, test, pre?
-
+--save --save-dev
 ## transpiling
 ### pure babel
 ``` "purebabel": "babel index.js --presets babel-preset-env --out-dir distribution" ````
