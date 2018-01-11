@@ -55,7 +55,7 @@ NPM is our package manager, it handles downloading / using JS libraries for us.
 
 Two new kids on the block are Yarn & Turbo, they do exactly the same, but a re a bit more shiny. NPM is still the standard, we'll use that
 ### Requirements
-Install [Node](https://nodejs.org/en/) which will also install NPM
+Install [Node](https://nodejs.org/en/) which will also install NPM (you should probably choose the LTS version)
 
 NPM vs yarn vs ...
 
