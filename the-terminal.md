@@ -57,12 +57,45 @@ Two new kids on the block are Yarn & Turbo, they do exactly the same, but a re a
 ### Requirements
 Install [Node](https://nodejs.org/en/) which will also install NPM (you should probably choose the LTS version)
 
+### Global vs. Local
+Global packages can be used everywhere, in the terminal. But only a few modules should be installed globally. They take up space, needs manual updates, and it's kinda hard to cleanup.
 
-`npm install`
-`npm install -g live-server`
-svgo
-pageres-cli
-https://github.com/sindresorhus/pageres-cli
+Local modules can only be used in the current project (but can of course be installed for every project), and cannot be run from the terminal directly, for that we need to setup NPM (more later).
+
+Warning, almost all modules indicate you should install the module globally, that is rarely the case.
+
+### [npmjs.com](https://npmjs.com)
+Is where you'll find all your modules, there's a short description, and usage instructions for each. But it's hard to read, and often not suited for "command-line-usage", the modules github repo is often the best place to find answers.
+
+### Installing a global module
+When you have found a module, open up the terminal and write `npm install -g modulename`
+
+Then it's available everywhere by typing modulename (or something close to that, for instance, the module `pageres-cli` is run by typing `pageres`). The documentation states what you need to do.
+
+### Fun global modules to play with
+These are a few of my favourites, let me know if you have any fun ones :-) None of these modules have to be global, but they are modules I often want to use outside a project, which makes them perfect candidates for global modules.
+
+Note: With a service running, you can press `ctrl+c`to stop it
+
+1. `npm install -g live-server`
+
+[live-server](https://www.npmjs.com/package/live-server) gives us a development server. Everytime we change a file, it reloads the webpage. Just like Brackets' live preview, except this one won't break. In the terminal, navigate to any old project you have and type `live-server`
+
+2. `npm install -g pageres-cli`
+[pageres-cli](https://github.com/sindresorhus/pageres-cli) takes a screenshot of a webpage in various resolutions.
+#### Usage
+`pageres website.com widthxheight widthxheight widthxheight [--crop]`
+By default we supply a height, and pageres ignores it, unless we supply the argument `--crop``
+
+- Take a screenshot of facebook: `pageres facebook.com 768x300`
+- Take a screenshot of facebook, cropping it to 300 px (height): `pageres acebook.com 768x300 --crop`
+- Take several screenshots of facebook: `pageres facebook.com 1600x800 1200x800 1000x800 600x800 --crop`
+
+Note: pageres uses a thing called phantomjs (a browser that doesn't show anything :) and is not always updated with the latest JS features, meaning, that the screenshots we get might be a bit off.
+
+3. `npm install -g svgo`
+
+
 https://github.com/purifycss/purifycss
 purifycss src/css/main.css src/css/bootstrap.css src/js/main.js --min --info --out src/dist/index.css
 (læser filer ind fra venstre til højre)
