@@ -94,14 +94,10 @@ By default we supply a height, and pageres ignores it, unless we supply the argu
 Note: pageres uses a thing called phantomjs (a browser that doesn't show anything :) and is not always updated with the latest JS features, meaning, that the screenshots we get might be a bit off.
 
 3. `npm install -g svgo`
+[svgo](https://www.npmjs.com/package/svgo) Used to optimize/minify SVG's this time, you take a look at [the documentation](https://www.npmjs.com/package/svgo)
 
 
-https://github.com/purifycss/purifycss
-purifycss src/css/main.css src/css/bootstrap.css src/js/main.js --min --info --out src/dist/index.css
-(læser filer ind fra venstre til højre)
-"purify": "purifycss index.html  a.css b.css bootstrap.min.css --info --out dist.css" virker
-"purify": "purifycss index.html  bootstrap.min.css a.css b.css  --info --out dist.css" ocverser enkelte styles i a.css
-purify skal nok kun bruges på framework css? evt på en fil af gangen?
+
 ### setup NPM for the current project
 `npm init`
 This will give us a file called package.json. We can add scripts/commands to it, to automate our workflow.
@@ -113,6 +109,17 @@ npm run myfirstscript
 "bundlecss": "cat a.css b.css > bundle.css"
 `cat styles/*.css > out/bundle.css`
 
+4. `npm install -g purifycss`
+OMG this is so cool (but not perfect). Look through your html/js/css files and finds selectors that are not used, and removes them. Really awesome if you use a framework.
+
+https://github.com/purifycss/purifycss
+purifycss src/css/main.css src/css/bootstrap.css src/js/main.js --min --info --out src/dist/index.css
+(læser filer ind fra venstre til højre)
+"purify": "purifycss index.html  a.css b.css bootstrap.min.css --info --out dist.css" virker
+"purify": "purifycss index.html  bootstrap.min.css a.css b.css  --info --out dist.css" ocverser enkelte styles i a.css
+purify skal nok kun bruges på framework css? evt på en fil af gangen?
+ "p2": "purifycss *.html *.css *.js --info --out out/dist.css"
+ 
 npm run ....
 npm start, test, pre?
 --save --save-dev
