@@ -110,7 +110,7 @@ npm run myfirstscript
 `cat styles/*.css > out/bundle.css`
 
 4. `npm install -g purifycss`
-OMG this is so cool (but not perfect). Look through your html/js/css files and finds selectors that are not used, and removes them. Really awesome if you use a framework.
+OMG this is so cool (but not perfect). It looks through your html/js/css files and finds selectors that are not used, and removes them. Really awesome if you use a framework.
 
 https://github.com/purifycss/purifycss
 purifycss src/css/main.css src/css/bootstrap.css src/js/main.js --min --info --out src/dist/index.css
