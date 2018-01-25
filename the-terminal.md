@@ -14,6 +14,7 @@ commit staged files | `git commit -m "my commit message"`|
 add and commit, one-liner | `git commit -am "my message"` | does NOT add new/untracked files
 push commited to remote | `git push` |
 status | `git status` | overview of staged files etc, **really** usefull
+rm | `git rm filname` | remove a tracked file (and delete it) e.g `git rm main.js`
 **branches** | |
 list branches | `git branch -a` | 
 checkout a branch | `git branch branchname`| ex: `git branch login`
