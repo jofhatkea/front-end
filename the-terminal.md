@@ -16,7 +16,7 @@ push commited to remote | `git push` |
 status | `git status` | overview of staged files etc, **really** usefull
 **branches** | |
 list branches | `git branch -a` | 
-checkout a branch | `git branch branchname`| ex: `git branch login``
+checkout a branch | `git branch branchname`| ex: `git branch login`
 merge branch | `git merge branchname` | standing on the branch you wish to merge in to, remember to checkout the new branch. ex: `git merge login`
 "set upstream" | `git push --set-upstream origin branchname` | ex: `git push --set-upstream origin login`
 **cloning / initializing** | |
@@ -94,7 +94,7 @@ By default we supply a height, and pageres ignores it, unless we supply the argu
 Note: pageres uses a thing called phantomjs (a browser that doesn't show anything :) and is not always updated with the latest JS features, meaning, that the screenshots we get might be a bit off.
 
 3. `npm install -g svgo`
-[svgo](https://www.npmjs.com/package/svgo) Used to optimize/minify SVG's this time, you take a look at [the documentation](https://www.npmjs.com/package/svgo)
+[svgo](https://www.npmjs.com/package/svgo) Used to optimize/minify SVG's, this time *you* take a look at [the documentation](https://www.npmjs.com/package/svgo)
 
 
 
