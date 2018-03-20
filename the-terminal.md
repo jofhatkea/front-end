@@ -19,7 +19,7 @@ Remember, TAB is your friend, it can autocomplete a lot of stuff
 `ls`|list files in dir|N/A
 `ls -lah`|List all files in dir, including hidden| N/A
 `rm file.ext`|delete a file| can be used with a wildcard `rm *.html`
-`rm -rf folder`|delete a folder and all sub folders| N/A
+`rm -rf folder`|delete a folder and all sub folders| Beware `rm -rf /` would try to delete everything on your computer
 `mv old new`|move/rename a file or folder|`mv out dist`
 `touch file.ext`|create a new file or change it's "last edited status"|N/A
 `open file.ext`|open the file in the preferred program|N/A
