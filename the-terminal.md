@@ -5,6 +5,36 @@ Mac users have an excellent terminal built in, Windows users should either use g
 https://www.codecademy.com/learn/learn-the-command-line 
 part 1, 2 & 3
 
+## using the terminal, cheatsheet
+Remember, TAB is your friend, it can autocomplete a lot of stuff
+| command | explanation | examples
+---|---|---
+`cd`|change directory | `cd` navigates to your home folder
+`cd ..`|go up one level|N/A
+`cd ../../`|go up two levels|`cd ../..` does the same
+`cd /`|go to the root of the machine/server|N/A
+`cd folder`|go to the specified folder|`cd dist/js`
+`pwd`|Print working directory| Prints out where you are
+`ls`|list files in dir|N/A
+`ls -lah`|List all files in dir, including hidden| N/A
+`rm file.ext`|delete a file| can be used with a wildcard `rm *.html`
+`rm -rf folder`|delete a folder and all sub folders| N/A
+`mv old new`|move/rename a file or folder|`mv out dist`
+`touch file.ext`|create a new file or change it's "last edited status"|N/A
+`open file.ext`|open the file in the preferred program|N/A
+`>`|"pipe" the content from the terminal into a file|`ls -lah > out.txt`
+`cmd1 && cmd2`|run commands after each other|`touch .gitignore && open .gitignore`
+
+### Excercise
+clone X from github, fire up the terminal, navigate to the root of the folder and perform the following tasks in groups of 2-3 people
+1. delete all folders starting with `del_`
+2. in the `src` folder, create the following structure
+    - css/main.css
+    - js/index.js
+    - assets/gfx/
+3. delete everything inside the `dist` folder
+4. copy everything from the `src` folder to the `dist` folder
+
 ## git in the terminal
 | action | command | notes |
 ---|---|---
@@ -20,7 +50,7 @@ list branches | `git branch -a` |
 checkout a branch | `git branch branchname`| ex: `git branch login`
 merge branch | `git merge branchname` | standing on the branch you wish to merge in to, remember to checkout the new branch. ex: `git merge login`
 "set upstream" | `git push --set-upstream origin branchname` | ex: `git push --set-upstream origin login`
-**cloning / initializing** | |
+**cloning / initializing** ||
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
 setup a new repo locally | `git init`| 
 **other** | |
@@ -33,9 +63,12 @@ We can create a file called `.gitignore` in the root of our project to lidt thos
 1. `touch .gitignore`
 2. `open .gitignore` or open it in your editor
 3. Add a line for each folder / file to exclude from git, e.g.
-  1. `node_modules/`
-  2. `build/`
-  3. `TODO.md`
+    * `node_modules/`
+    * `build/`
+    * `TODO.md`
+
+So if you add the line `node_modules` git status will no longer show it as being changed/added when you do a `git status`
+
 ### git workflow
 There's no fixed way to do it, but here's a rule-of-thumb-aproach
 1. `git branch todays-tasks`
@@ -94,6 +127,7 @@ Note: With a service running, you can press `ctrl+c`to stop it
 
 2. `npm install -g pageres-cli`
 [pageres-cli](https://github.com/sindresorhus/pageres-cli) takes a screenshot of a webpage in various resolutions.
+
 #### Usage
 `pageres website.com widthxheight widthxheight widthxheight [--crop]`
 By default we supply a height, and pageres ignores it, unless we supply the argument `--crop``
@@ -135,11 +169,52 @@ purify skal nok kun bruges på framework css? evt på en fil af gangen?
 npm run ....
 npm start, test, pre?
 --save --save-dev
+
+## restoring node_modules
+rm -rf node_modules
+npm install
+
 ## transpiling / bundling
 The next section is fully explained (and very well) in https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
 ### pure babel
+TODO webpack has changed to v4
+https://www.valentinog.com/blog/webpack-4-tutorial/#webpack_4_as_a_zero_configuration_module_bundler
+
+browser-sync start --server 'dist' --files 'dist'
+https://gist.github.com/adamreisnz/9edf1f48e19c104b81f8102a27de0940
+http://lucasmreis.github.io/blog/npm-is-an-amazing-build-tool/
+
+
 ``` "purebabel": "babel index.js --presets babel-preset-env --out-dir distribution" ```
 But that won't enable "require", we need a bundler
 Enter webpack
+
+npm install webpack babel-core babel-preset-env babel-loader --save-dev
+
+create webpack.config.js
+
+// webpack.config.js
+module.exports = {
+  entry: './index.js',
+  output: {
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
+      }
+    ]
+  }
+};
+
+
 ## linting
 
