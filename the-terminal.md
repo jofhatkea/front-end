@@ -26,6 +26,16 @@ setup a new repo locally | `git init`|
 **other** | |
 list commits | `git log`| This one has **a lot of options**
 
+### .gitignore
+There are lots of files we do not wish to push, like platform dependent files ($Thumbs.db, mac hidden files, node_modules etc). Furthermore, it's considered bad practice to push "build" folders and minified source code.
+
+We can create a file called `.gitignore` in the root of our project to lidt those files
+1. `touch .gitignore`
+2. `open .gitignore` or open it in your editor
+3. Add a line for each folder / file to exclude from git, e.g.
+  1. `node_modules/`
+  2. `build/`
+  3. `TODO.md`
 ### git workflow
 There's no fixed way to do it, but here's a rule-of-thumb-aproach
 1. `git branch todays-tasks`
@@ -110,6 +120,7 @@ npm run myfirstscript
 "bundlecss": "cat a.css b.css > bundle.css"
 `cat styles/*.css > out/bundle.css`
 
+evt https://github.com/giakki/uncss
 4. `npm install -g purifycss`
 OMG this is so cool (but not perfect). It looks through your html/js/css files and finds selectors that are not used, and removes them. Really awesome if you use a framework.
 
@@ -124,9 +135,10 @@ purify skal nok kun bruges på framework css? evt på en fil af gangen?
 npm run ....
 npm start, test, pre?
 --save --save-dev
-## transpiling
+## transpiling / bundling
+The next section is fully explained (and very well) in https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70
 ### pure babel
-``` "purebabel": "babel index.js --presets babel-preset-env --out-dir distribution" ````
+``` "purebabel": "babel index.js --presets babel-preset-env --out-dir distribution" ```
 But that won't enable "require", we need a bundler
 Enter webpack
 ## linting
