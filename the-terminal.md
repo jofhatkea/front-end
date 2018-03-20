@@ -7,7 +7,8 @@ part 1, 2 & 3
 
 ## using the terminal, cheatsheet
 Remember, TAB is your friend, it can autocomplete a lot of stuff
-| command | explanation | examples
+
+| command | explanation | examples |
 ---|---|---
 `cd`|change directory | `cd` navigates to your home folder
 `cd ..`|go up one level|N/A
