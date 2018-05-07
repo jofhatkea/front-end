@@ -8,7 +8,7 @@ part 1, 2 & optionally 3
 ## using the terminal, cheatsheet
  - Remember, TAB is your friend, it can autocomplete a lot of stuff
  - Arrow up / down goes through your history, so you don't have to type the same over and over
- 
+
 | command | explanation | examples |
 ---|---|---
 `cd`|change directory | `cd` navigates to your home folder
@@ -49,11 +49,11 @@ status | `git status` | overview of staged files etc, **really** usefull
 rm | `git rm filname` | remove a tracked file (and delete it) e.g `git rm main.js`
 **branches** | |
 list branches | `git branch -a` | 
-checkout a branch | `git branch branchname`| ex: `git branch login`
+checkout a branch | `git checkout branchname`| ex: `git checkout login`
 merge branch | `git merge branchname` | standing on the branch you wish to merge in to, remember to checkout the new branch. ex: `git merge login`
 "set upstream" | `git push --set-upstream origin branchname` | ex: `git push --set-upstream origin login`
 **cloning / initializing** ||
-clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
+clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', add ` .` after `.git` to clone to the current folder
 setup a new repo locally | `git init`| 
 **other** | |
 list commits | `git log`| This one has **a lot of options**
