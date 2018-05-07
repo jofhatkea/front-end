@@ -49,7 +49,7 @@ status | `git status` | overview of staged files etc, **really** usefull
 rm | `git rm filname` | remove a tracked file (and delete it) e.g `git rm main.js`
 **branches** | |
 list branches | `git branch -a` | 
-checkout a branch | `git branch branchname`| ex: `git branch login`
+checkout a branch | `git checkout branchname`| ex: `git checkout login`
 merge branch | `git merge branchname` | standing on the branch you wish to merge in to, remember to checkout the new branch. ex: `git merge login`
 "set upstream" | `git push --set-upstream origin branchname` | ex: `git push --set-upstream origin login`
 **cloning / initializing** ||
