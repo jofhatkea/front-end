@@ -3,11 +3,12 @@ Mac users have an excellent terminal built in, Windows users should either use g
 ## Requirements
 ### codecademy, the command line
 https://www.codecademy.com/learn/learn-the-command-line 
-part 1, 2 & 3
+part 1, 2 & optionally 3
 
 ## using the terminal, cheatsheet
-Remember, TAB is your friend, it can autocomplete a lot of stuff
-
+ - Remember, TAB is your friend, it can autocomplete a lot of stuff
+ - Arrow up / down goes through your history, so you don't have to type the same over and over
+ 
 | command | explanation | examples |
 ---|---|---
 `cd`|change directory | `cd` navigates to your home folder
@@ -78,7 +79,7 @@ There's no fixed way to do it, but here's a rule-of-thumb-aproach
 4. `git add newfile.ext`
 5. `git commit -m "some message"`
 6. goto 4
-7. Something is working: `git push --set-upstream origin todays-tasks`
+7. Something is working: `git push --set-upstream origin todays-tasks` (only done once?)
 8. `git push` and goto 4
 9. Everything is awesome: `git checkout master && git merge todays-tasks`
 
@@ -219,3 +220,5 @@ module.exports = {
 
 ## linting
 
+//TODO https://www.npmjs.com/package/critical
+//TODO https://github.com/pwa-builder/ManifoldJS
