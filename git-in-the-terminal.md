@@ -46,6 +46,7 @@ There's no fixed way to do it, but here's a rule-of-thumb-aproach
 
 ### merge conflicts
 They are bound to happen, and one of the main reasons we use git
+
 First up, two ways to merge
 1. From github.com
 With two branches pushed to github, go to "Pull requests", select "master" as base, and choose the branch you want to merge into master
