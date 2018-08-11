@@ -1,4 +1,4 @@
-# The Terminal
+# Terminal Cheatsheet
 Mac users have an excellent terminal built in, Windows users should either use git-bash or the terminal in your editor
 
 See this post for help configuring VS Code to use "bash"

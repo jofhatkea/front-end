@@ -1,4 +1,6 @@
 # git in the terminal
+
+## Cheatsheet
 | action | command | notes |
 ---|---|---
 add a file (stage) | `git add filename.ext` | 
@@ -57,3 +59,19 @@ Then follow the GUI / instructions
 Requires a bit more work, but it's oh so nice :-)
 
 Once a conflict is encountered, open the file in VS Code (or WebStorm) and use the GUI to select the changes you like
+
+### Setting up a project
+In the terminal, navigate to the root of your project and initialize it as a git repository
+1. `git init`
+2. Create a `.gitignore` file and add files/folders we do not wish to track
+3. Add files to git (now we can use --all). `git add --all``
+4. and then commit the files: `git commit -m "Initial commit"``
+5. Then we need to set up the remote repository (i.e. github.com)
+    1. On github create a new repository
+    2. The page you get gives us the needed instructions to "push an existing repository from the command line", something like:
+    ```
+    git remote add origin https://github.com/jofhatkea/himomdeleteme.git
+    git push -u origin master
+    ```
+6. Paste the command in the terminal
+7. Finally, we can push our files: `git push`
