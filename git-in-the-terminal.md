@@ -19,7 +19,7 @@ merge branch | `git merge branchname` | standing on the branch you wish to merge
 clone a repository | `git clone repositoryname.git` | will create a local folder called 'repositoryname', pass ` .` to clone to an existing folder
 setup a new repo locally | `git init`| 
 **other** | |
-list commits | `git log`| This one has **a lot of options**
+list commits | `git log`| This one has **a lot of options**, but this is my favourite `git log --oneline --all --graph --decorate`
 
 ### .gitignore
 There are lots of files we do not wish to push, like platform dependent files ($Thumbs.db, mac hidden files, node_modules etc). Furthermore, it's considered bad practice to push "build" folders and minified source code.
