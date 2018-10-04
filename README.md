@@ -6,3 +6,4 @@
 4. [Setting up VS Code, #2 - ESLint](https://github.com/jofhatkea/front-end/blob/master/setting-up-vs-code-part-2.md)
 5. [Setting up VS Code, #3 - ESLint-plugin-compat](https://github.com/jofhatkea/front-end/blob/master/setting-up-vs-code-part-3.md)
 6. [Staying up to date](https://github.com/jofhatkea/front-end/blob/master/staying-up-to-date.md)
+7. [JS Classes](https://github.com/jofhatkea/front-end/blob/master/js-classes.md)
